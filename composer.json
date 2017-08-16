@@ -4,13 +4,12 @@
     "description": "Provides an add-on purchasable entity.",
     "keywords": ["Drupal", "Commerce"],
     "license": "GPL-2.0+",
-    "homepage": "https://www.drupal.org/sandbox/mglaman/2902625",
+    "homepage": "https://www.drupal.org/project/commerce_addon",
     "minimum-stability": "dev",
     "support": {
-      "issues": "https://www.drupal.org/project/issues/2902625"
+      "issues": "https://www.drupal.org/project/issues/commerce_addon"
     },
     "require": {
       "drupal/commerce": "~2.0"
     }
   }
-  

@@ -31,8 +31,8 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
- *       "add" = "Drupal\Core\Entity\ContentEntityForm",
- *       "edit" = "Drupal\Core\Entity\ContentEntityForm",
+ *       "add" = "Drupal\commerce_addon\Form\AddonForm",
+ *       "edit" = "Drupal\commerce_addon\Form\AddonForm",
  *       "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm",
  *     },
  *   },
@@ -50,9 +50,9 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   },
  *   links = {
  *     "add-form" = "/admin/commerce/addons/add",
- *     "edit-form" = "/admin/commerce/addons/{commerce_addon_addon}/edit",
+ *     "edit-form" = "/admin/commerce/addons/{commerce_addon}/edit",
  *     "collection" = "/admin/commerce/addons",
- *     "delete-form" = "/admin/commerce/addons/{commerce_addon_addon}/delete",
+ *     "delete-form" = "/admin/commerce/addons/{commerce_addon}/delete",
  *   },
  * )
  */

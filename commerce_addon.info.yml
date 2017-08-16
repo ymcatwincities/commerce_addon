@@ -6,3 +6,4 @@ dependencies:
   - entity
   - commerce
   - commerce:commerce_price
+  - commerce:commerce_order
