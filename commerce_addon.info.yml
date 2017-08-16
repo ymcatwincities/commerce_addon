@@ -1,0 +1,7 @@
+name: Commerce Add-on
+description: Provides an add-on purchasable entity
+type: module
+core: 8.x
+dependencies:
+  - commerce
+  - commerce:commerce_price
