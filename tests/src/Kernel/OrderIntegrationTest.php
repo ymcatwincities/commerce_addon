@@ -8,6 +8,8 @@ use Drupal\Tests\commerce\Kernel\CommerceKernelTestBase;
 
 /**
  * Tests add-ons and order / order item integration
+ *
+ * @group commerce_addon
  */
 class OrderIntegrationTest extends CommerceKernelTestBase {
 
@@ -48,6 +50,7 @@ class OrderIntegrationTest extends CommerceKernelTestBase {
       'title' => 'Enable super powers',
       'description' => 'Adding this will give your product super powers',
       'price' => new Price('25.00', 'USD'),
+      'type' => 'default',
     ]);
     $addon->save();
 

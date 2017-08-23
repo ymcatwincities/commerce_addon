@@ -37,6 +37,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     },
  *   },
  *   admin_permission = "administer commerce_addon",
+ *   permission_granularity = "bundle",
  *   fieldable = TRUE,
  *   translatable = TRUE,
  *   base_table = "commerce_addon",
@@ -45,15 +46,19 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "id" = "addon_id",
  *     "langcode" = "langcode",
  *     "uuid" = "uuid",
+ *     "bundle" = "type",
  *     "label" = "title",
  *     "status" = "status",
  *   },
  *   links = {
- *     "add-form" = "/admin/commerce/addons/add",
+ *     "add-page" = "/admin/commerce/addons/add",
+ *     "add-form" = "/admin/commerce/addons/add/{commerce_addon_type}",
  *     "edit-form" = "/admin/commerce/addons/{commerce_addon}/edit",
  *     "collection" = "/admin/commerce/addons",
  *     "delete-form" = "/admin/commerce/addons/{commerce_addon}/delete",
  *   },
+ *   bundle_entity_type = "commerce_addon_type",
+ *   field_ui_base_route = "entity.commerce_addon_type.edit_form"
  * )
  */
 class Addon extends ContentEntityBase implements AddonInterface {

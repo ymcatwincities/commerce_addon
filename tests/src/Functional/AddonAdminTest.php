@@ -5,6 +5,11 @@ namespace Drupal\Tests\commerce_addon\Functional;
 use Drupal\Core\Url;
 use Drupal\Tests\commerce\Functional\CommerceBrowserTestBase;
 
+/**
+ * Tests CRUD with addons.
+ *
+ * @group commerce_addon
+ */
 class AddonAdminTest extends CommerceBrowserTestBase {
 
   public static $modules = [

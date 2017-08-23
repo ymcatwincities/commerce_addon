@@ -33,6 +33,7 @@ class AddonTest extends CommerceKernelTestBase {
       'title' => 'Enable super powers',
       'description' => 'Adding this will give your product super powers',
       'price' => new Price('25.00', 'USD'),
+      'type' => 'default',
     ]);
     $addon->save();
 
