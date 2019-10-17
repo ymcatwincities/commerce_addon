@@ -6,6 +6,7 @@ use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\Entity\EntityChangedTrait;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\commerce_price\Price;
 
 /**
  * Defines the Service Level Addon entity class.
@@ -111,6 +112,14 @@ class Addon extends ContentEntityBase implements AddonInterface {
     if (!$this->get('price')->isEmpty()) {
       return $this->get('price')->first()->toPrice();
     }
+  }
+
+  /**
+   * Set the purchasable entity's price.
+   */
+  public function setPrice(Price $price) {
+    $this->set('price', $price);
+    return $this;
   }
 
   /**
