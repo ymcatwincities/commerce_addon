@@ -1,5 +1,5 @@
 {
-    "name": "drupal/commerce_addon",
+    "name": "openy/commerce_addon",
     "type": "drupal-module",
     "description": "Provides an add-on purchasable entity.",
     "keywords": ["Drupal", "Commerce"],
