@@ -1,9 +1,9 @@
 name: Commerce Add-on
 description: Provides an add-on purchasable entity
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 dependencies:
-  - entity
-  - commerce
+  - drupal:entity
+  - drupal:commerce
   - commerce:commerce_price
   - commerce:commerce_order
